@@ -8,11 +8,11 @@
         <!--make the site look good on all viewport-->
     
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
-        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"/>
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
         <link rel="stylesheet" href="css/styles.css" />
     
         <title>NuCamp: A Better Way To Camp</title>
@@ -25,7 +25,7 @@
         <div class="container">
             <div class="row">
                <div class="col-4 col-sm-2 align-self-center">
-                    <a href="#"><img src="img/logo.png" alt="NuCamp Logo" class="img-fluid"></a>
+                    <a href="#"><img src="img/logo.png"  class="img-fluid"></a>
                 </div>
                 <div class="col">
                     <h1>NuCamp</h1>
@@ -106,12 +106,12 @@
         <div class="row row-content">
             <div class="col-sm-6 mx-auto">
                 <div class="card">
-                    <h3 class="card-header bg-info text-white">Reserve Campsite</h3>
+                    <label for="numCampers"><h3 class="card-header bg-info text-white">Reserve Campsite</h3></label> <!--testing to see if i can add multiple label to one id-->
                     <div class="card-body">
                         <form id="reserveForm" action="">
                             <div class="row form-group">
-                                <label class="col-sm-6 col-form-label" for="numCampers"> Number of Campers</label>
-                                <div  class="col">
+                                <label class="col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
+                                <div class="col-sm-6 ">
                                     <select class="form-control" name="numCampers" id="numCampers">
                                         <option value="">Select...</option>
                                         <option value="1">1</option>
@@ -120,24 +120,29 @@
                                         <option value="4">4</option>
                                         <option value="5">5</option>
                                         <option value="6">6</option>
-                                     </select>
+                            
+                                    </select>
                                 </div>
                             </div>
                             <div class="row form-group">
-                                <label class="col-sm-6 col-form-label" for="date">Date</label>
-                                <div class="col">
-                                    <input class="form-control" type="date" name="date" id="date" placeholder="date">
+                                <label class="col-sm-6 col-form-labe" for="date">Date</label>
+                                <div class="col-sm-6">
+                                    <input class="form-control" type="date" id="date" name="date" placeholder="date">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <button class="btn btn-primary btn-lg" type="submit">Search</button>
+                                    <button class="btn btn-primary btn-lg"type="submit">Search</button>
                                 </div>
+
                             </div>
                         </form>
+
                     </div>
                 </div>
+                
             </div>
+
         </div>
     </div> 
 
